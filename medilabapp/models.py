@@ -16,6 +16,7 @@ class Patients(models.Model):
     fullname = models.CharField(max_length=200)
     emailaddress = models.EmailField(max_length=200)
     medicalhistory = models.TextField()
+    age = models.IntegerField()
 
 
     def __str__(self):
